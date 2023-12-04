@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+String name="홍길동";
 </body>
 </html>
