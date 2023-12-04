@@ -4,10 +4,81 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-	
+	.table_content{
+		/*라인선 통합*/
+		border-collapse: collapse;
+		border-top-width: 3px;
+		border-top-style: solid;
+		border-top-color:#333;
+		
+		
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-color:#333;
+	}
+	.table_content th,td{
+		margin:0px;
+		padding:8px;
+		font-size: 9pt;
+	}
+	.table_content th{
+		background-color: #999;
+		color: #fff;
+		border-bottom-width: 1px;
+		border-bottom-color: #333;
+	}
+	.table_content td{
+		border-bottom-width: 1px;
+		border-bottom-color: #666;
+		border-bottom-style: dotted;
+	}
+	.table_content .text-center{
+		text-align: center;
+	}
+	.table_content .text-left{
+		text-align: left;
+	}
+	.table_content .text-right{
+		text-align: right;
+	}
+	.table_content .dataTer:hover{
+		background-color: #FC6;
+		cursor: pointer;
+	}
 </style>
 </head>
 <body>
-
+	<table class="table_content" width="500">
+		<tr>
+			<th>이름</th>
+			<th>국어</th>
+			<th>영어</th>
+			<th>수학</th>
+			<th>총점</th>
+		</tr>
+		<tr class="dataTr">
+			<td class="text-center">홍길동</td>
+			<td class="text-center">80</td>
+			<td class="text-center">80</td>
+			<td class="text-center">80</td>
+			<td class="text-center">240</td>
+		</tr>
+		<tr class="dataTr">
+			<td class="text-center">홍길동</td>
+			<td class="text-center">80</td>
+			<td class="text-center">80</td>
+			<td class="text-center">80</td>
+			<td class="text-center">240</td>
+		</tr>
+		<tr class="dataTr">
+			<td class="text-center">홍길동</td>
+			<td class="text-center">80</td>
+			<td class="text-center">80</td>
+			<td class="text-center">80</td>
+			<td class="text-center">240</td>
+		</tr>
+		
+		
+	</table>
 </body>
 </html>

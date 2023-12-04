@@ -1,0 +1,52 @@
+<!--
+	   각 태그마다 속성
+	   ================
+	   inline : === === ===
+	     <img> <object>(동영상) <sub> <sup>
+		 <span> <input> <textarea> <label> <button>	 
+	   block : 태그가 브라우저 한줄 전체를 차지하고 있다 
+	       ===
+	       ===
+	       ===
+	       <div> <ol> <ul>
+	   => 변경시에 사용하는 CSS => display (<table>을 대체)
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/*h1{
+		background-color: green;
+	}
+	span{
+		background-color: blue;
+	} */
+	img{
+		width: 100px;
+		height: 150px;
+		display: block;
+		margin-top: 20px;
+	}
+	.box1,box2,box3{
+		width: 150px;
+		height: 150px;
+		background-color: red;
+		margin-top: 10px;
+		display: inline-block;
+		
+		
+	}
+</style>
+
+</head>
+<body>
+	<img src="../image/m1.jpg">
+	<img src="../image/m2.jpg">
+	<img src="../image/m3.jpg">
+	<div class="box1"></div>
+	<div class="box1"></div>
+	<div class="box1"></div>
+</body>
+</html>

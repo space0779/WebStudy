@@ -13,10 +13,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="../css/table.css">
+<style type="text/css">
+  .container{
+     margin-top: 50px;
+     width:100%;
+     margin: 0px auto;
+  }
+  h1{
+     text-align: center;
+  }
+  .row, .table_content{
+     width:800px;
+     margin: 0px auto; /*가운데 정렬*/
+  }
+</style>
 </head>
 <body>
+<div class="container">
+<div class="row">
   <h1>사원목록</h1>
-  <table border=1 width=400>
+  <table class="table_content" width=400>
    <tr>
      <th>사번</th>
      <th>이름</th>
@@ -34,20 +51,21 @@
      <%
         for(EmpVO vo:list)
         {
-      %>   	
-        	<tr>
-        	  <td><%= vo.getEmpno() %></td>
-        	  <td><%= vo.getEname() %></td>
-        	  <td><%= vo.getJob() %></td>
-        	  <td><%= vo.getHiredate() %></td>
-        	  <td><%= vo.getSal() %></td>
-        	</tr>
-        	
-     <%   	
+      %>      
+           <tr class="dataTr">
+             <td class="text-center"><%= vo.getEmpno() %></td>
+             <td class="text-center"><%= vo.getEname() %></td>
+             <td class="text-center"><%= vo.getJob() %></td>
+             <td class="text-center"><%= vo.getHiredate() %></td>
+             <td class="text-center"><%= vo.getSal() %></td>
+           </tr>
+           
+     <%      
         }
      %>
    
   </table>
-
+</div>
+</div>
 </body>
 </html>
