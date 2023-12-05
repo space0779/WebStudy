@@ -9,7 +9,53 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-	
+	#wrapper{
+		border:5px solid #FC9;
+		width:500px;
+		margin-left: 150px;
+		border-radius: 10px;
+	}
+	#joinForm{
+		display:table;
+		margin:10px auto;
+		border-collapse: collapse;
+	}
+	#joinForm h1{
+		display: table-caption;
+		font-size: 15px;
+		padding: 5px;
+		margin-bottom: 10px;
+		width: 450px;
+	}
+	#joinForm h1 span{
+		text-align: center;
+		display: block;
+		color: #FFF;
+		background-color: #333;
+		padding: 5px;
+		margin: 0px auto;
+	}
+	#joinForm p{
+		display: table-row;
+		padding: 5px;
+		border-bottom: 1px solid #6b6b6b;
+	}
+	#joinForm label{
+		display: table-cell;
+		padding-left: 10px;
+	}
+	#joinForm #userid{
+		width: 100px;
+	}
+	#joinForm #userpwd{
+		width: 80px;
+	}
+	#joinForm #username{
+		width: 100px;
+	}
+	#joinForm .cellstyle{
+		
+	}
 </style>
 </head>
 <body>
@@ -18,15 +64,15 @@
 			<h1><span>회원가입</span></h1>
 			<p>
 				<label for="userid">ID</label>
-				<input type="text" name="id" id="userid" class="cell">
+				<input type="text" name="id" id="userid" class="cellstyle">
 			</p>
 			<p>
 				<label for="userpw">Password</label>
-				<input type="text" name="pw" id="userpw" class="cell">
+				<input type="text" name="pw" id="userpw" class="cellstyle">
 			</p>
 			<p>
 				<label for="username">Name</label>
-				<input type="text" name="name" id="username" class="cell">
+				<input type="text" name="name" id="username" class="cellstyle">
 			</p>
 		</form>
 	</div>
