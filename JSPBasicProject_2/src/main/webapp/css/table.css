@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.table_content{
+		/*라인선 통합*/
+		border-collapse: collapse;
+		border-top-width: 3px;
+		border-top-style: solid;
+		border-top-color:#333;
+		
+		
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-color:#333;
+	}
+	.table_content th,td{
+		margin:0px;
+		padding:8px;
+		font-size: 9pt;
+	}
+	.table_content th{
+		background-color: #999;
+		color: #fff;
+		border-bottom-width: 1px;
+		border-bottom-color: #333;
+	}
+	.table_content td{
+		border-bottom-width: 1px;
+		border-bottom-color: #666;
+		border-bottom-style: dotted;
+	}
+	.table_content .text-center{
+		text-align: center;
+	}
+	.table_content .text-left{
+		text-align: left;
+	}
+	.table_content .text-right{
+		text-align: right;
+	}
+	.table_content .dataTer:hover{
+		background-color: #FC6;
+		cursor: pointer;
+	}
