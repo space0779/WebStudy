@@ -28,6 +28,53 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<%--
+     JSP주석은 사라진다
+     HTML주석은 남아있다
+     HTML+Java를 동시에 주석을 설정
+     
+     => <%= %>
+        <%  %> ==> MVC에서는 사용하지 않는다 
+                   Spring에서는 MVC만 사용
+                   => 태그형으로 제작 : JSTL
+                   <%= %> => ${}
+     => 내장 객체 => Spring/Spring-Boot
+        ***request : JSP마다 request를 가지고 있다
+                     단점은 화면 변경/새로고침 => request는 초기화
+                     => HttpServletRequest의 객체명
+                     => jsp페이지로 데이터를 전송시에 데이터 전체를 묶어서 보내준다
+                                                      ==================== request
+                     => request는 Map형식으로 되어 있다
+                        (키,값) => 키는 중복이 불가능하다
+                        <input type=text name="aaa">
+                                         =========== 키 , 입력값
+                                         getParameter("aaa")    
+                        <input type=text name="aaa">
+                        <input type=text name="aaa"> 
+                        
+                        => ?name=aaa   => getParameter("name")
+                            ==== ===
+                             키   값  => ?page=1 
+                                         ? page=1
+                                         ====== ===
+                        => a.jsp
+                           => null
+                           if(a==null)
+                        => a.jsp?name=1
+                           => " "
+                           if(a.equals(""))     
+                        => form태그를 이용해서 전송 : post => action
+                        => <a> ==> get =>()?name=홍길동
+        =========================================                                   
+        ***response
+        ***session
+        application : 업로드 
+        ===========
+        pageContext => RequestDispatcher => include,forward
+         <jsp:include>
+        out
+        =========== 다운로드               
+ --%>
 <body>
   1. ***사용자의 IP:<%=request.getRemoteAddr() %><br>
   2. 서버 정보:<%=request.getServerName() %><br>
